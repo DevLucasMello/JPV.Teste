@@ -6,7 +6,7 @@ import { ContatoComponent } from './navegacao/pages/contato/contato.component';
 import { SobreComponent } from './navegacao/pages/sobre/sobre.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   {path: 'sobre', component: SobreComponent},
   {path: 'contato', component: ContatoComponent},
