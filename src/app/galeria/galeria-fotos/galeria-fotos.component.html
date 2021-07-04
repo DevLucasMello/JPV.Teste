@@ -7,15 +7,15 @@
         </div>
         <div class="col-xl-5 col-lg-7 col-md-8 col-sm-12 mt-3">
           <input class="custom-input-search" type="search" placeholder="Pesquise pelo nome"
-          (ngModelChange)="this.searchFilter.next($event)"/>
+          (ngModelChange)="this.searchFilter.next($event)" [(ngModel)]="nomeFilme"/>
         </div>
       </div>
       <div class="grupo-cards">    
-        <div class="card"></div>       
+        <div *ngFor="let foto of fotos" class="card"><img class="imagem" [attr.src]="foto"></div>       
         
         <div class="row pagina">
-          <img class="botao-voltar" src="./assets/Voltar.svg" alt="Anterior">      
-          <img class="botao-avancar" src="./assets/Voltar.svg" alt="Próximo">
+          <img (click)="listarFilmes(page - 1)" class="botao-voltar" src="./assets/Voltar.svg" alt="Anterior">      
+          <img (click)="listarFilmes(page + 1)" class="botao-avancar" src="./assets/Voltar.svg" alt="Próximo">
         </div>
       </div>
     </div>  
@@ -36,7 +36,7 @@
         </div>
       </div>
       <div class="grupo-cards">    
-        <div class="card"></div>        
+        <div *ngFor="let foto of fotos" class="card"><img class="imagem" [attr.src]="foto"></div>        
         
         <div class="row pagina">
           <img class="botao-voltar" src="./assets/Voltar.svg" alt="Anterior">      

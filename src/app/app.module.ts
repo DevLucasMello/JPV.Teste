@@ -7,12 +7,13 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavegacaoModule } from './navegacao/navegacao.module';
 import { FormsModule } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  imports: [
+  imports: [   
     BrowserModule,
     AppRoutingModule,
     NavegacaoModule,
@@ -20,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
