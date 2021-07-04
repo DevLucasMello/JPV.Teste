@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-galeria-fotos',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./galeria-fotos.component.css']
 })
 export class GaleriaFotosComponent implements OnInit {
+
+  searchFilter = new Subject<string>();
+  public nomeFilme: string;
 
   constructor() { }
 

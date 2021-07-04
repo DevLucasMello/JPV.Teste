@@ -1,0 +1,264 @@
+.custom-input-search {
+    background-image: url('/assets/search.svg');
+    background-size: 3%;
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+    padding-left: 45px;
+    border-radius: 22px;
+    border-style: solid;
+    border-color:white;
+    width: 100%;
+    height: 40px;
+    /*Font*/
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    color: #444444;
+    box-shadow: 5px 5px 5px #CFCFCF;
+}
+
+.galeria{
+    margin-top: 40px;
+    width: 80%;
+    height: 82vh;    
+}
+
+/* top right bottom left */
+
+.card{
+    width: 15%;
+    height: 20%;
+    margin: 0 0 1% 1%;
+    border-radius: 8px;
+    border-style: none;    
+}
+
+.info-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.texto{
+    font-size: 20px;   
+    margin-top: 30px;
+    width: 100%;
+    height: 30%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.titulo{
+    font-size: 22px;    
+}
+
+.grupo-cards{
+    margin-top: 30px;
+    width: 100%;
+    height: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: scroll;
+    overflow-x: hidden;     
+}
+
+::-webkit-scrollbar
+    {
+        width: 0px;
+    }
+::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+}
+
+.espaco{
+    margin-left: 15px;
+}
+
+h5{
+    width: 100%;    
+    text-align: center;
+}
+
+.pagina{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+.botao-avancar{
+    transform: rotate(180deg);
+    cursor: pointer;
+    height: 50px;
+    width: 15%;
+}
+
+.botao-voltar{
+    cursor: pointer;
+    height: 50px;
+    width: 15%;
+}
+
+@media only screen and (min-width: 767px) {
+}
+
+.comtouch{
+    display: none;
+}
+.semtouch{
+    visibility: visible;
+}
+
+@media only screen and (min-width: 270px ) and (max-width: 767px){
+    .texto{       
+        margin-top: 15px;       
+        height: 50%;
+    }
+
+    .galeria{
+        margin-top: 20px;
+        width: 98%;        
+    }
+
+    .card{
+        width: 30%;
+        height: 28%;
+        margin: 0 0 4% 1%;       
+    }
+    
+    h3{
+        margin-top: -70px;
+        font-size: 24px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+    .pagina{       
+        height: 80px;        
+    }
+    
+    .botao-avancar{        
+        width: 35%;
+        height: 40px;
+    }
+    
+    .botao-voltar{       
+        width: 35%;
+        height: 40px;
+    }
+
+    .custom-input-search {       
+        background-size: 4.5%;
+        height: 35px;        
+    }
+}
+
+@media only screen and (min-width: 768px ) and (max-width: 999px){
+    .texto{       
+        margin-top: 15px;       
+        height: 35%;
+    } 
+    
+    h3{
+        margin-top: -40px;
+    }
+
+    .card{
+        width: 23%;
+        height: 27%;       
+    }
+
+    .pagina{       
+        height: 140px;        
+    }
+    
+    .botao-avancar{        
+        width: 22%;
+        height: 40px;
+    }
+    
+    .botao-voltar{       
+        width: 22%;
+        height: 40px;
+    }
+
+    .custom-input-search {       
+        background-size: 4%;        
+    }
+}
+
+@media only screen and (min-width: 1000px ) and (max-width: 1249px){
+    .texto{       
+        margin-top: 15px;       
+        height: 40%;
+    } 
+    
+    h3{
+        margin-top: -40px;
+    }
+
+    .card{
+        width: 23%;
+        height: 27%;       
+    }
+
+    .pagina{       
+        height: 120px;        
+    }
+    
+    .botao-avancar{        
+        width: 22%;
+        height: 40px;
+    }
+    
+    .botao-voltar{       
+        width: 22%;
+        height: 40px;
+    }
+
+    .custom-input-search {       
+        background-size: 3.6%;        
+    }
+}
+
+@media only screen and (min-width: 1250px ) and (max-width: 1600px){
+    .card{
+        width: 18%;
+        height: 25%;       
+    }
+    
+    .botao-avancar{        
+        width: 18%;
+        height: 40px;
+    }
+    
+    .botao-voltar{       
+        width: 18%;
+        height: 40px;
+    }
+
+    .pagina{       
+        height: 90px;        
+    }
+
+    .custom-input-search {       
+        background-size: 3.5%;        
+    }
+}

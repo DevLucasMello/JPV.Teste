@@ -7,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
   imports: [
     CommonModule,
     RouterModule,
-    NgbModule,    
+    NgbModule,
+    FormsModule,
     CollapseModule.forRoot(),    
   ],
   exports: [

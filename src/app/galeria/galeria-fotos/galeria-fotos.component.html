@@ -1,3 +1,48 @@
-<p>
-  galeria-fotos works!
-</p>
+<div class="semtouch">
+  <div class="container-fluid info-galeria">
+    <div class="galeria">
+      <div class="row justify-content-center">          
+        <div class="col-12 custom-text-size18 font-bold mb-2 titulo">
+          Filmes
+        </div>
+        <div class="col-xl-5 col-lg-7 col-md-8 col-sm-12 mt-3">
+          <input class="custom-input-search" type="search" placeholder="Pesquise pelo nome"
+          (ngModelChange)="this.searchFilter.next($event)"/>
+        </div>
+      </div>
+      <div class="grupo-cards">    
+        <div class="card"></div>       
+        
+        <div class="row pagina">
+          <img class="botao-voltar" src="./assets/Voltar.svg" alt="Anterior">      
+          <img class="botao-avancar" src="./assets/Voltar.svg" alt="Próximo">
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+<div class="comtouch">
+  <div class="container-fluid info-galeria">
+    <div class="galeria">
+      <div class="row justify-content-center">          
+        <div class="col-12 custom-text-size14 font-bold mb-2 titulo">
+          Filmes
+        </div>
+        <div class="col-xl-5 col-lg-7 col-md-8 col-sm-12 mt-3">
+          <input class="custom-input-search" type="search" placeholder="Pesquise pelo nome"
+          (ngModelChange)="this.searchFilter.next($event)"/>
+        </div>
+      </div>
+      <div class="grupo-cards">    
+        <div class="card"></div>        
+        
+        <div class="row pagina">
+          <img class="botao-voltar" src="./assets/Voltar.svg" alt="Anterior">      
+          <img class="botao-avancar" src="./assets/Voltar.svg" alt="Próximo">
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
