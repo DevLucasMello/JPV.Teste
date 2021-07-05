@@ -46,13 +46,12 @@ section{
 @media only screen and (min-width: 270px ) and (max-width: 767px){
     .texto{       
         margin-top: 15px;       
-        height: 95%;
+        height: 100%;
     }
 
     section{
         width: 90%;
-        margin-bottom: 10%;
-        background-color: aqua;
+        margin-bottom: 10%;        
     }
 
     .titulo-tecnologia{
@@ -77,6 +76,11 @@ section{
 
     h5{
         font-size: 18px;
+    }
+
+    .main-container{        
+        height: 100vh;
+        
     }
 }
 
